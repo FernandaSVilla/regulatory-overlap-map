@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this map, please cite it as below."
+title: "Regulatory Overlap Map: person-centred map of obligations in automated credit and account-opening decisions"
+repository-code: "https://github.com/FernandaSVilla/regulatory-overlap-map"
+url: "https://fernandasvilla.github.io/regulatory-overlap-map/"
+version: "1.0.0"
+date-released: "2026-10-16"
+license:
+  - Apache-2.0
+  - CC-BY-4.0
+type: software
+authors:
+  - family-names: "Sánchez-Villa"
+    given-names: "María Fernanda"
+    orcid: "https://orcid.org/0009-0003-3410-3366"
+keywords:
+  - "EU AI Act"
+  - "GDPR"
+  - "financial inclusion"
+  - "consumer credit"
+  - "basic payment account"
+  - "regulatory overlap"

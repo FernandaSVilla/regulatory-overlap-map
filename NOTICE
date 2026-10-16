@@ -1,0 +1,7 @@
+Regulatory Overlap Map
+Copyright 2026 María Fernanda Sánchez-Villa
+
+Código (index.html): Apache License 2.0 (archivo LICENSE).
+Datos incluidos en el mapa (obligaciones, relaciones y explicaciones): Creative Commons Atribución 4.0 Internacional (archivo LICENSE-DATA).
+
+index.html incluye la librería d3 v7.8.5 (https://d3js.org), Copyright 2010-2023 Mike Bostock, publicada con licencia ISC.
