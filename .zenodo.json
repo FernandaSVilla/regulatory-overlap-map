@@ -1,0 +1,38 @@
+{
+  "upload_type": "software",
+  "title": "Regulatory Overlap Map: person-centred map of obligations in automated credit and account-opening decisions",
+  "version": "1.0.0",
+  "publication_date": "2026-10-20",
+  "creators": [
+    {
+      "name": "Sánchez-Villa, María Fernanda",
+      "orcid": "0009-0003-3410-3366"
+    }
+  ],
+  "access_right": "open",
+  "license": "apache-2.0",
+  "language": "spa",
+  "description": "<p>Interactive, person-centred map of the 50 obligations that EU and Spanish law impose when a bank uses an automated system to grant consumer credit or open an account, and of the 32 relations between them (obligations matrix v1.2, frozen on 14 October 2026). Each obligation links to the official text of its legal instrument.</p><p>Single self-contained HTML file in Spanish and English; works offline. Code under Apache 2.0; the data it displays under CC BY 4.0. Includes the d3 library (ISC licence).</p><p>Online map: <a href=\"https://fernandasvilla.github.io/regulatory-overlap-map/\">fernandasvilla.github.io/regulatory-overlap-map</a></p>",
+  "keywords": [
+    "EU AI Act",
+    "GDPR",
+    "regulatory overlap",
+    "financial inclusion",
+    "consumer credit",
+    "basic payment account",
+    "interactive map",
+    "person-centred"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/FernandaSVilla/regulatory-overlap-calculator",
+      "relation": "isSupplementTo",
+      "scheme": "url"
+    },
+    {
+      "identifier": "https://fernandasvilla.github.io/regulatory-overlap-map/",
+      "relation": "isDocumentedBy",
+      "scheme": "url"
+    }
+  ]
+}
