@@ -30,8 +30,16 @@ Abre `index.html` en cualquier navegador. Es un solo archivo, funciona sin conex
 
 El mapa usa la matriz v1.2, congelada el 14 de octubre de 2026, del [Regulatory Overlap Calculator](https://github.com/FernandaSVilla/regulatory-overlap-calculator), donde están los archivos CSV y el libro de códigos.
 
-## Licencia y cómo citar
+## Licencia
 
 El código se publica con licencia Apache 2.0 y los datos con CC BY 4.0. El archivo incluye la librería d3 (licencia ISC); ver `NOTICE`.
 
-> Sánchez-Villa, M. F. (2026). *Regulatory Overlap Map: person-centred map of obligations in automated credit and account-opening decisions* (Version 1.0.0) [Software]. GitHub. https://github.com/FernandaSVilla/regulatory-overlap-map
+## Cómo citar
+
+Este trabajo está archivado en Zenodo y tiene un DOI permanente.
+
+> Sánchez-Villa, M. F. (2026). *Regulatory Overlap Map: person-centred map of obligations in automated credit and account-opening decisions* (Version 1.0.0) [Software]. Zenodo. https://doi.org/10.5281/zenodo.23496803
+
+[![DOI](https://zenodo.org/badge/1422187635.svg)](https://doi.org/10.5281/zenodo.23496803)
+
+Ese DOI es el DOI de concepto: siempre lleva a la versión más reciente. Para citar exactamente la versión 1.0.0, usa https://doi.org/10.5281/zenodo.23496804. También puedes usar el botón **«Cite this repository»** de esta página, que genera la cita en APA y BibTeX.

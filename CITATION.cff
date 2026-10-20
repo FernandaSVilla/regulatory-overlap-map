@@ -3,8 +3,9 @@ message: "If you use this map, please cite it as below."
 title: "Regulatory Overlap Map: person-centred map of obligations in automated credit and account-opening decisions"
 repository-code: "https://github.com/FernandaSVilla/regulatory-overlap-map"
 url: "https://fernandasvilla.github.io/regulatory-overlap-map/"
+doi: "10.5281/zenodo.23496803"
 version: "1.0.0"
-date-released: "2026-10-16"
+date-released: "2026-10-20"
 license:
   - Apache-2.0
   - CC-BY-4.0

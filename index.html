@@ -38,7 +38,7 @@ header p{margin:3px 0 0;color:var(--muted);max-width:110ch;font-size:12.5px}
 select{font:inherit;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:2px;padding:3px 6px}
 .foot{display:flex;flex-direction:column;gap:10px;margin-top:6px}
 .foot .note{margin:0;max-width:none}
-.cite{width:100%;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:6px 18px;align-items:center}
+.cite{width:100%;display:grid;grid-template-columns:minmax(0,1fr);gap:8px;align-items:center}
 .cite h3{grid-column:1/-1;margin:0!important}
 .citetxt{font-size:13px;margin:0;user-select:all}
 .citeact{display:flex;gap:10px;align-items:center;flex-wrap:wrap}
@@ -93,6 +93,7 @@ aside{display:flex;flex-direction:column;gap:10px;min-width:0}
 .off{color:#1a5fb4;text-decoration:underline;text-underline-offset:2px}
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .off{color:#8ab4f8}}
 :root[data-theme="dark"] .off{color:#8ab4f8}
+.doib{display:inline-flex;align-items:stretch;border-radius:3px;overflow:hidden;font:600 12px/1.7 Arial,Helvetica,sans-serif;text-decoration:none;vertical-align:middle}.doib span{padding:0 7px}.doib span:first-child{background:#555;color:#fff}.doib span:last-child{background:#0e7fc0;color:#fff}.doib:hover{opacity:.85}
 .oss{font-size:10.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;border:1px solid var(--ink);color:var(--ink);padding:3px 8px;border-radius:2px}
 </style>
 <div class="wrap">
@@ -154,7 +155,7 @@ aside{display:flex;flex-direction:column;gap:10px;min-width:0}
   <div class="cite card">
     <h3 data-t="citeH"></h3>
     <p id="citeTxt" class="citetxt" data-t="citeTxt"></p>
-    <div class="citeact"><button class="copy" id="citeBtn" data-t="copy"></button>
+    <div class="citeact"><a class="doib" href="https://doi.org/10.5281/zenodo.23496804" target="_blank" rel="noopener" title="DOI"><span>DOI</span><span>10.5281/zenodo.23496804</span></a><button class="copy" id="citeBtn" data-t="copy"></button>
     <div class="lic"><a href="https://www.apache.org/licenses/LICENSE-2.0" target="_blank" rel="noopener"><span data-t="licC"></span><span>Apache 2.0</span></a><a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener"><span data-t="licD"></span><span>CC BY 4.0</span></a></div></div>
   </div>
 </div>
@@ -176,7 +177,7 @@ es:{title:"Mapa de la superposición regulatoria",sub:"Centrado en la persona",
  lgN:"<b>N</b> integrada: una ley dice que cumplir una basta o que se cumplen juntas",lgD:"<b>D</b> mismo fin, definición distinta",lgI:"<b>I</b> equivalente o compatible",lgC:"<b>C</b> en tensión",
  normsH:'Normas <span style="text-transform:none;letter-spacing:0;font-weight:400">(toca una para ver todas sus obligaciones)</span>',
  source:"Fuente: matriz de obligaciones v1.2 de la <a href='https://fernandasvilla.github.io/regulatory-overlap-calculator/calculadora/' target='_blank' rel='noopener'>Regulatory Overlap Calculator</a>, donde se puede calcular el coste de cada escenario. Los dos puntos verdes nacionales cambian según el país elegido en «Ámbito»: son la ley que obliga a comunicar la denegación de una cuenta básica (Directiva 2014/92/UE) y la ley contra el blanqueo que obliga a no abrir la relación si no se puede conocer al cliente (Directiva (UE) 2015/849, que el AMLR sustituirá en gran parte desde julio de 2027). En España son el RDL 19/2017 y la Ley 10/2010. Codificación de la autora para España; las leyes de los otros 26 países se identificaron con fuentes públicas. Las explicaciones están simplificadas para lectores sin formación jurídica.",
- svgLabel:"Red de obligaciones y relaciones",citeH:"Cómo citar",copy:"Copiar cita",licC:"Código",licD:"Datos",copied:"Copiada",citeTxt:"Sánchez-Villa, M. F. (2026). <i>Regulatory Overlap Map: person-centred map of obligations in automated credit and account-opening decisions</i> (Version 1.0.0) [Software]. GitHub. https://github.com/FernandaSVilla/regulatory-overlap-map",grpL:"Agrupar por",grpOri:"Orientación",grpDec:"Decisión",rInt:"Obligaciones internas del banco",rPer:"De cara a la persona",rS:"Crédito",rA:"Alta de cuenta",scopeL:"Ámbito:",
+ svgLabel:"Red de obligaciones y relaciones",citeH:"Cómo citar",copy:"Copiar cita",licC:"Código",licD:"Datos",copied:"Copiada",citeTxt:"Sánchez-Villa, M. F. (2026). <i>Regulatory Overlap Map: person-centred map of obligations in automated credit and account-opening decisions</i> (Version 1.0.0) [Software]. Zenodo. https://doi.org/10.5281/zenodo.23496804",grpL:"Agrupar por",grpOri:"Orientación",grpDec:"Decisión",rInt:"Obligaciones internas del banco",rPer:"De cara a la persona",rS:"Crédito",rA:"Alta de cuenta",scopeL:"Ámbito:",
  factsF:(o,r,n,a,b,c,d)=>`<span><b>${o}</b> obligaciones</span><span><b>${r}</b> relaciones</span><span><b>${n}</b> normas</span><span>Relaciones integradas por norma: <b>${a} de ${b}</b> entre obligaciones internas, <b>${c} de ${d}</b> entre obligaciones de cara a la persona</span>`,
  oUE:"Unión Europea (solo normas europeas)",es:"España",
  noteES:"España es el caso de referencia (codificación de la autora).",noteUE:"Solo las normas europeas, sin las dos leyes nacionales.",
@@ -206,7 +207,7 @@ en:{title:"Regulatory Overlap Map",sub:"A person-centred view",
  lgN:"<b>N</b> integrated: a provision says complying with one suffices or that both can be met together",lgD:"<b>D</b> same aim, different definition",lgI:"<b>I</b> equivalent or compatible",lgC:"<b>C</b> in tension",
  normsH:'Rules <span style="text-transform:none;letter-spacing:0;font-weight:400">(click one to see all its obligations)</span>',
  source:"Source: obligations matrix v1.2 from the <a href='https://fernandasvilla.github.io/regulatory-overlap-calculator/calculadora/' target='_blank' rel='noopener'>Regulatory Overlap Calculator</a>, where the cost of each scenario can be calculated. The two national green dots change with the country chosen under «Scope»: the law requiring notice of a basic account refusal (Directive 2014/92/EU) and the AML law requiring the relationship not to be opened if the customer cannot be known (Directive (EU) 2015/849, largely replaced by the AMLR from July 2027). In Spain these are Royal Decree-law 19/2017 and Law 10/2010. Coding by the author for Spain; the laws of the other 26 countries were identified from public sources. Explanations are simplified for readers without legal training.",
- svgLabel:"Network of obligations and relations",citeH:"How to cite",copy:"Copy citation",licC:"Code",licD:"Data",copied:"Copied",citeTxt:"Sánchez-Villa, M. F. (2026). <i>Regulatory Overlap Map: person-centred map of obligations in automated credit and account-opening decisions</i> (Version 1.0.0) [Software]. GitHub. https://github.com/FernandaSVilla/regulatory-overlap-map",grpL:"Group by",grpOri:"Orientation",grpDec:"Decision",rInt:"Internal bank obligations",rPer:"Person-facing",rS:"Credit",rA:"Account opening",scopeL:"Scope:",
+ svgLabel:"Network of obligations and relations",citeH:"How to cite",copy:"Copy citation",licC:"Code",licD:"Data",copied:"Copied",citeTxt:"Sánchez-Villa, M. F. (2026). <i>Regulatory Overlap Map: person-centred map of obligations in automated credit and account-opening decisions</i> (Version 1.0.0) [Software]. Zenodo. https://doi.org/10.5281/zenodo.23496804",grpL:"Group by",grpOri:"Orientation",grpDec:"Decision",rInt:"Internal bank obligations",rPer:"Person-facing",rS:"Credit",rA:"Account opening",scopeL:"Scope:",
  factsF:(o,r,n,a,b,c,d)=>`<span><b>${o}</b> obligations</span><span><b>${r}</b> relations</span><span><b>${n}</b> rules</span><span>Relations integrated by an express provision: <b>${a} of ${b}</b> between internal obligations, <b>${c} of ${d}</b> between person-facing obligations</span>`,
  oUE:"European Union (EU rules only)",es:"Spain",
  noteES:"Spain is the reference case (coding by the author).",noteUE:"EU rules only, without the two national laws.",
